@@ -8,7 +8,7 @@ pub const GammaFunctionError = error{
 
 pub fn log_gamma(comptime float_t: type, x: float_t) GammaFunctionError!float_t {
     comptime if (!trait.isFloat(float_t) or @sizeOf(float_t) < @sizeOf(f32)) {
-        @compileError("gamma_ln_proto requires at least a 32-bit float type parameter.");
+        @compileError("log_gamma requires at least a 32-bit float type parameter.");
     };
 
     if (x <= 0.0) return GammaFunctionError.ArgumentMustBeGreaterThanZero;
