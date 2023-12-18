@@ -2,7 +2,7 @@
 
 ## Feature ideas
 
-[ ] Gamma / Erland distribution numerical methods.
-[ ] Exponential distribution numerical methods.
-[ ] Exponentially distributed R.V. simulation.
-[ ] MRAD on streams.
+- [ ] Gamma / Erland distribution numerical methods.
+- [ ] Exponential distribution numerical methods.
+- [ ] Exponentially distributed R.V. simulation.
+- [ ] MRAD on streams.
