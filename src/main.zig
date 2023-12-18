@@ -6,6 +6,8 @@ pub const GammaFunctionError = error{
     ArgumentMustBeGreaterThanZero,
 };
 
+// Natural logarithm of the Gamma function.
+// Requires a floating type parameter. Should be at least f32 or bigger.
 pub fn log_gamma(comptime float_t: type, x: float_t) GammaFunctionError!float_t {
     comptime if (!trait.isFloat(float_t) or @sizeOf(float_t) < @sizeOf(f32)) {
         @compileError("log_gamma requires at least a 32-bit float type parameter.");
@@ -30,6 +32,12 @@ pub fn log_gamma(comptime float_t: type, x: float_t) GammaFunctionError!float_t 
     }
 
     return tmp + @log(stp * ser / xx);
+}
+
+fn gser(comptime float_t: type, a: float_t, b: float_t) GammaFunctionError!float_t {
+    _ = b;
+    _ = a;
+
 }
 
 test "log_gamma(x + 1) = factorial(x) " {
