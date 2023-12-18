@@ -5,4 +5,4 @@
 - [ ] Gamma / Erland distribution numerical methods.
 - [ ] Exponential distribution numerical methods.
 - [ ] Exponentially distributed R.V. simulation.
-- [ ] MRAD on streams.
+- [ ] [MRAD](https://www.stat.purdue.edu/~lingsong/research/MRADANM08.pdf) on streams.
