@@ -1,3 +1,8 @@
 # Operational and financial simulation functions in Zig
 
-subj.
+## Feature ideas
+
+[ ] Gamma / Erland distribution numerical methods.
+[ ] Exponential distribution numerical methods.
+[ ] Exponentially distributed R.V. simulation.
+[ ] MRAD on streams.
